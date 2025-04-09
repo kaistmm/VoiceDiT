@@ -1,14 +1,13 @@
-# VoiceLDM
+# VoiceDiT
 
 This is a repository for the paper, [VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/pdf/2412.19259), ICASSP 2025.
 
 <p align="center">
-  <img src="assets/main_figure.png"/>
+  <img src="assets/pipeline.png"/>
 </p>
 
-VoiceLDM is an extension of text-to-audio models so that it is also capable of generating linguistically intelligible speech.
+VoiceDiT is a multi-modal generative model for producing environment-aware speech and audio from text and visual prompts.
 
-[2024/05 Update] I have now added the code for training VoiceLDM! Refer to [Training](#-training) for more details.
 
 <a href='https://mm.kaist.ac.kr/projects/voicedit/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>  <a href='https://arxiv.org/pdf/2412.19259'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
 
@@ -17,9 +16,9 @@ VoiceLDM is an extension of text-to-audio models so that it is also capable of g
 
 ### Install from source
 ```shell
-git clone https://github.com/glory20h/VoiceLDM.git
-cd VoiceLDM
-pip install -e .
+git clone https://github.com/kaistmm/VoiceDiT.git
+cd VoiceDiT
+pip install -r requirements.txt
 ```
 
 ## 📖 Usage
@@ -68,6 +67,8 @@ python generate.py -h
 This work would not have been possible without the following repositories:
 
 [VoiceLDM](https://github.com/glory20h/VoiceLDM)
+
+[PixArt-alpha](https://github.com/PixArt-alpha/PixArt-alpha)
 
 [HuggingFace Diffusers](https://github.com/huggingface/diffusers)
 

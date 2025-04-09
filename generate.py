@@ -1,10 +1,6 @@
 import os
 import argparse
 import warnings
-import pandas as pd
-import csv
-from tqdm import tqdm
-import numpy as np
 
 import torch
 import torchaudio
@@ -20,8 +16,8 @@ def parse_args(parser):
     parser.add_argument('--cont_prompt', '-c', type=str, help='content prompt')
     parser.add_argument('--speaker_audio', '-spk', type=str, help='speaker audio')
 
-    parser.add_argument("--ckpt_path", type=str, help="checkpoint file path for VoiceDiT")
-    parser.add_argument("--v2a_ckpt_path", type=str, default='/mnt/lynx2/datasets/TTA/AAAI2025/v2a_mapper/v2amapper_0625', help='checkpoint file path for V2A-Mapper')
+    parser.add_argument("--ckpt_path", type=str, required=True, help="checkpoint file path for VoiceDiT")
+    parser.add_argument("--v2a_ckpt_path", type=str, help='checkpoint file path for V2A-Mapper')
     parser.add_argument("--output_dir", type=str, default="./outputs", help="directory to save generated audio")
     parser.add_argument("--file_name", type=str, help="filename for the generated audio")
 
