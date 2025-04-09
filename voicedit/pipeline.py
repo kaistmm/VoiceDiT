@@ -28,7 +28,7 @@ from huggingface_hub import hf_hub_download
 
 from .utils import sequence_mask, generate_path, fix_len_compatibility
 from espnet2.bin.spk_inference import Speech2Embedding
-from v2a_mapper import DiffusionPrior
+from i2a_translator import DiffusionPrior
 
 from diffusion.model.nets.DiT2 import DiT_models
 from diffusion.model.nets.DiT import DiT_cross_models
