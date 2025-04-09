@@ -1,0 +1,1 @@
+from .DiT import DiT, DiT_XL_2
